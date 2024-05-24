@@ -1,0 +1,75 @@
+<style>
+    body, html {
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+  }
+    .navbar-header {
+      font-family: 'Arial', sans-serif;
+      background-color: #343a40; /* Cor de fundo cinza escuro */
+      color: #fff; /* Cor do texto branco */
+      padding: 20px; /* Espaçamento interno */
+    }
+  
+    .navbar-menu-header a {
+      color: #fff; /* Cor do texto branco */
+      margin-right: 20px; /* Espaçamento entre os itens do menu */
+      text-decoration: none; /* Remover sublinhado dos links */
+      font-weight: bold; /* Negrito para destacar os links */
+    }
+    .content {
+      padding: 20px;
+    }
+  
+    /* Estilo do rodapé */
+  .footer {
+      font-family: 'Arial', sans-serif;
+      background-color: #e5e5e5; /* Altere a cor conforme necessário */
+      color: #333;
+      text-align: center;
+      padding: 10px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  
+    /* Adicionando margem ao conteúdo para evitar que fique sob o rodapé */
+    .content {
+        padding: 20px;
+        margin-bottom: 60px; /* Altura do rodapé + algum espaço adicional, se necessário */
+    }
+  
+    #map {
+      height: 600px;
+      width: 100%; /* Utilizar toda a largura disponível */
+      margin-top: 20px; /* Espaçamento entre a barra superior e o mapa */
+    }
+  </style>
+  
+  
+  <header class="navbar navbar-header navbar-header-fixed">
+    <div class="container-fluid">
+      <a href="" id="mainMenuOpen" class="burger-menu"><i data-feather="menu"></i></a>
+      <div id="navbarMenu" class="navbar-menu-wrapper">
+        <div class="navbar-menu-header">
+          <a href="{% url 'core:index' %}" class="df-logo"><span>Geolocalização</span></a>
+          <a href="{% url 'core:list' %}"><span>Alvos</span></a>
+        </div>
+      </div> 
+    </div>
+    </header>
+    <div id="map"></div>
+    <footer class="footer bg-info">
+      <div class="w-100">
+        <span>&copy;  </span>
+      </div>
+    </footer>
+  
+    
+    <script>
+       
+      
+    </script>
